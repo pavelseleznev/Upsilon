@@ -13,6 +13,7 @@
 		D4776B18227211C300878181 /* Upsilon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4776B16227211C300878181 /* Upsilon.xcdatamodeld */; };
 		D4776B1A227211C800878181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4776B19227211C800878181 /* Assets.xcassets */; };
 		D4776B1D227211C800878181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4776B1B227211C800878181 /* LaunchScreen.storyboard */; };
+		D4D820F822814D4800A1EAF8 /* MyFinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D820F722814D4800A1EAF8 /* MyFinesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D4776B19227211C800878181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4776B1C227211C800878181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4776B1E227211C800878181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D820F722814D4800A1EAF8 /* MyFinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				D4776B0F227211C300878181 /* AppDelegate.swift */,
 				D4776B11227211C300878181 /* PrimaryVC.swift */,
+				D4D820F722814D4800A1EAF8 /* MyFinesVC.swift */,
 				D4776B13227211C300878181 /* Main.storyboard */,
 				D4776B19227211C800878181 /* Assets.xcassets */,
 				D4776B1E227211C800878181 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				D4776B12227211C300878181 /* PrimaryVC.swift in Sources */,
 				D4776B10227211C300878181 /* AppDelegate.swift in Sources */,
+				D4D820F822814D4800A1EAF8 /* MyFinesVC.swift in Sources */,
 				D4776B18227211C300878181 /* Upsilon.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
