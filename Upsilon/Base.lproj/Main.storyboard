@@ -13,18 +13,65 @@
         <!--Мой Автоюрист-->
         <scene sceneID="ZiW-Ya-BGx">
             <objects>
-                <viewController id="csL-L1-gYV" sceneMemberID="viewController">
+                <viewController id="csL-L1-gYV" customClass="MyLaywerVC" customModule="Upsilon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhu-z1-DWB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cqN-4c-jEo">
+                                <rect key="frame" x="23" y="105" width="274" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ АВТОЮРИСТ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Co-pR6">
+                                        <rect key="frame" x="61.5" y="0.0" width="151" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Если вам, вашим друзьям и близким нужна помощь по с следующим вопросам:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-RR-kXs">
+                                        <rect key="frame" x="20" y="30.5" width="234.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Uo-3KP">
+                                        <rect key="frame" x="28" y="101.5" width="218" height="101.5"/>
+                                        <string key="text">- помощь при ДТП
+- суд со страховой
+- возврат прав
+- независимая экспертиза при ДТП</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nbd-48-G9h">
+                                <rect key="frame" x="48" y="316" width="225" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">нажмите на этот номер
+8 (555) 678-88-89</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nbd-48-G9h" firstAttribute="leading" secondItem="7QN-3Z-XNc" secondAttribute="leading" constant="48" id="Kff-9C-GBX"/>
+                            <constraint firstItem="7QN-3Z-XNc" firstAttribute="bottom" secondItem="Nbd-48-G9h" secondAttribute="bottom" constant="133" id="Lps-ey-488"/>
+                            <constraint firstItem="cqN-4c-jEo" firstAttribute="leading" secondItem="7QN-3Z-XNc" secondAttribute="leading" constant="23" id="dcq-hq-adb"/>
+                            <constraint firstItem="7QN-3Z-XNc" firstAttribute="trailing" secondItem="cqN-4c-jEo" secondAttribute="trailing" constant="23" id="hP3-IQ-b1s"/>
+                            <constraint firstItem="Nbd-48-G9h" firstAttribute="top" secondItem="cqN-4c-jEo" secondAttribute="bottom" constant="8" id="jUk-jU-YHB"/>
+                            <constraint firstItem="cqN-4c-jEo" firstAttribute="top" secondItem="7QN-3Z-XNc" secondAttribute="top" constant="85" id="q8x-rs-xAT"/>
+                            <constraint firstItem="7QN-3Z-XNc" firstAttribute="trailing" secondItem="Nbd-48-G9h" secondAttribute="trailing" constant="47" id="wlP-tF-LyE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7QN-3Z-XNc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Мой Автоюрист" id="fZR-5m-iyv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ea5-ps-gva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="436"/>
+            <point key="canvasLocation" x="1245" y="435.21126760563379"/>
         </scene>
         <!--Мои Штрафы-->
         <scene sceneID="SqD-yd-Gjg">
