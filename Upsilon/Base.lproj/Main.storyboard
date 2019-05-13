@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ea5-ps-gva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="435.21126760563379"/>
+            <point key="canvasLocation" x="1168" y="434"/>
         </scene>
         <!--Мои Штрафы-->
         <scene sceneID="SqD-yd-Gjg">
@@ -130,39 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwD-Tn-fDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="435.21126760563379"/>
-        </scene>
-        <!--Частые штрафы-->
-        <scene sceneID="9rR-3x-eb2">
-            <objects>
-                <viewController id="ld3-Gw-GAV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gje-vZ-46j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tAa-CB-QMO"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Частые штрафы" id="t9d-JZ-wwP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lna-eX-h1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="336" y="435"/>
-        </scene>
-        <!--Бензин-->
-        <scene sceneID="3Gm-Jh-cLp">
-            <objects>
-                <viewController id="iVM-Xm-7sO" customClass="PrimaryVC" customModule="Upsilon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5zj-iI-MHb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="S2L-Sc-lc7"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Бензин" id="SZk-xc-XsZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqy-TQ-Kmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-585" y="435"/>
+            <point key="canvasLocation" x="2040" y="434"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ol5-lc-muV">
@@ -175,15 +143,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="iVM-Xm-7sO" kind="relationship" relationship="viewControllers" id="sDh-bj-BKy"/>
-                        <segue destination="ld3-Gw-GAV" kind="relationship" relationship="viewControllers" id="knF-Ak-hx7"/>
                         <segue destination="csL-L1-gYV" kind="relationship" relationship="viewControllers" id="ASz-Jh-VFc"/>
                         <segue destination="hl7-A5-kHG" kind="relationship" relationship="viewControllers" id="k7a-Xt-UvW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W62-Bw-oGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697.5" y="-446.83098591549299"/>
+            <point key="canvasLocation" x="1166" y="-408"/>
         </scene>
     </scenes>
 </document>

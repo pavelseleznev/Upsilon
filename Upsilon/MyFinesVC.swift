@@ -25,8 +25,7 @@ class MyFinesVC: UIViewController {
         
         // Set how links should appear: blue and underlined
         self.textView.linkTextAttributes = [
-            .foregroundColor: UIColor.blue,
-            .underlineStyle: NSUnderlineStyle.single.rawValue
+            .foregroundColor: UIColor.blue
         ]
     }
 }
