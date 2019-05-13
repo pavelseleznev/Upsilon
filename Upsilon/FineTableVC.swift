@@ -10,20 +10,50 @@ import UIKit
 
 class FineTableVC: UITableViewController {
     
-    var fines: [Fine] = [
-        Fine(fineDescription: "Отсутствие при водительский прав", fineAmount: "500₽"),
-        Fine(fineDescription: "Непристегнутый ремень безопасности", fineAmount: "500₽"),
-        Fine(fineDescription: "Поворот не по своей полосе", fineAmount: "500₽")
-    ]
+    var fines = [Fine]()
+    var filteredFines = [Fine]()
+    let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup the Search Controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Поиск"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
+        fines = [
+            Fine(fineDescription: "Отсутствие при водительский прав", fineAmount: "500₽"),
+            Fine(fineDescription: "Непристегнутый ремень безопасности", fineAmount: "500₽"),
+            Fine(fineDescription: "Поворот не по своей полосе", fineAmount: "500₽")
+        ]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    // MARK: - Private instance methods
+    
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredFines = fines.filter({( fine: Fine) -> Bool in
+            return fine.fineDescription.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -33,18 +63,23 @@ class FineTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return fines.count
-        } else {
-            return 0
+        if isFiltering() {
+            return filteredFines.count
         }
+        
+        return fines.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FineCell", for: indexPath)
-        let fine = fines[indexPath.row]
-        cell.textLabel?.text = fine.fineDescription
-        cell.detailTextLabel?.text = fine.fineAmount
+        let fine: Fine
+        if isFiltering() {
+            fine = filteredFines[indexPath.row]
+        } else {
+            fine = fines[indexPath.row]
+        }
+        cell.textLabel!.text = fine.fineDescription
+        cell.detailTextLabel!.text = fine.fineAmount
         return cell
     }
 
@@ -93,4 +128,11 @@ class FineTableVC: UITableViewController {
     }
     */
 
+}
+
+extension FineTableVC: UISearchResultsUpdating {
+    // MAKR: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }
