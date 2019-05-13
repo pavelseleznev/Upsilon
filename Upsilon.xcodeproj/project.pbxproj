@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D430F59D22896A4B000420CC /* FineTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D430F59C22896A4B000420CC /* FineTableVC.swift */; };
+		D430F59F22896B4F000420CC /* Fine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D430F59E22896B4F000420CC /* Fine.swift */; };
 		D4776B10227211C300878181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4776B0F227211C300878181 /* AppDelegate.swift */; };
 		D4776B15227211C300878181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4776B13227211C300878181 /* Main.storyboard */; };
 		D4776B18227211C300878181 /* Upsilon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4776B16227211C300878181 /* Upsilon.xcdatamodeld */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D430F59C22896A4B000420CC /* FineTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FineTableVC.swift; sourceTree = "<group>"; };
+		D430F59E22896B4F000420CC /* Fine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fine.swift; sourceTree = "<group>"; };
 		D4776B0C227211C300878181 /* Upsilon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upsilon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4776B0F227211C300878181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4776B14227211C300878181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				D4776B0F227211C300878181 /* AppDelegate.swift */,
 				D4D820F722814D4800A1EAF8 /* MyFinesVC.swift */,
 				D4DC5F05228411B500BFCA52 /* MyLaywerVC.swift */,
+				D430F59C22896A4B000420CC /* FineTableVC.swift */,
+				D430F59E22896B4F000420CC /* Fine.swift */,
 				D4776B13227211C300878181 /* Main.storyboard */,
 				D4776B1B227211C800878181 /* LaunchScreen.storyboard */,
 				D4776B19227211C800878181 /* Assets.xcassets */,
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4776B10227211C300878181 /* AppDelegate.swift in Sources */,
+				D430F59F22896B4F000420CC /* Fine.swift in Sources */,
 				D4D820F822814D4800A1EAF8 /* MyFinesVC.swift in Sources */,
 				D4776B18227211C300878181 /* Upsilon.xcdatamodeld in Sources */,
+				D430F59D22896A4B000420CC /* FineTableVC.swift in Sources */,
 				D4DC5F06228411B500BFCA52 /* MyLaywerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
