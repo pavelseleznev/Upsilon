@@ -25,9 +25,15 @@ class FineTableVC: UITableViewController {
         definesPresentationContext = true
         
         fines = [
-            Fine(fineDescription: "Отсутствие при водительский прав", fineAmount: "500₽"),
-            Fine(fineDescription: "Непристегнутый ремень безопасности", fineAmount: "500₽"),
-            Fine(fineDescription: "Поворот не по своей полосе", fineAmount: "500₽")
+            Fine(fineDescription: "Пьяная езда", fineAmount: "30 000₽ с лишением прав от 1.5 до 2 лет."),
+            Fine(fineDescription: "Превышение скорости", fineAmount: "От 500 До 5000₽, лишение водительских прав на 6 мес (зависит от нарушения скоростного режима)."),
+            Fine(fineDescription: "Езда без прав", fineAmount: "От 5 000 до 15 000₽, отстранение от управления ТС, задержание ТС."),
+            Fine(fineDescription: "Отсутствие деского кресла", fineAmount: "От 5 000 до 15 000₽, отстранение от управления ТС, задержание ТС."),
+            Fine(fineDescription: "Разговор по телефону", fineAmount: "Предупреждение или штраф 500₽."),
+            Fine(fineDescription: "Брызговики", fineAmount: "Предупреждение или штраф 500₽."),
+            Fine(fineDescription: "Отсутствие аптечки", fineAmount: "Предупреждение или штраф 500₽ руб."),
+            Fine(fineDescription: "Несоблюдение дистанции", fineAmount: "1500₽."),
+            Fine(fineDescription: "Отсутствие деского кресла", fineAmount: "От 5 000 до 15 000 ₽, отстранение от управления ТС, задержание ТС.")
         ]
 
         // Uncomment the following line to preserve selection between presentations
