@@ -132,6 +132,46 @@
             </objects>
             <point key="canvasLocation" x="2040" y="434"/>
         </scene>
+        <!--PrimaryVC-->
+        <scene sceneID="RGN-ne-zV6">
+            <objects>
+                <viewController id="lP1-Hl-Rcx" customClass="PrimaryVC" customModule="Upsilon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LIN-3d-Se7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-rg-fcp">
+                                <rect key="frame" x="0.0" y="111" width="320" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lP1-Hl-Rcx" id="4cU-er-rUy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vkc-FF-sT9" firstAttribute="trailing" secondItem="hE1-rg-fcp" secondAttribute="trailing" id="1oa-iX-BKr"/>
+                            <constraint firstItem="hE1-rg-fcp" firstAttribute="leading" secondItem="vkc-FF-sT9" secondAttribute="leading" id="376-tO-GuI"/>
+                            <constraint firstItem="hE1-rg-fcp" firstAttribute="top" secondItem="vkc-FF-sT9" secondAttribute="top" id="Jgi-W8-vy7"/>
+                            <constraint firstItem="vkc-FF-sT9" firstAttribute="bottom" secondItem="hE1-rg-fcp" secondAttribute="bottom" id="yzv-9r-9kz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vkc-FF-sT9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z1g-3I-1l0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="voK-zZ-j5s">
+                            <connections>
+                                <action selector="addRefuel:" destination="lP1-Hl-Rcx" id="IUW-gD-7Bm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hE1-rg-fcp" id="r1p-I4-hHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBR-fh-TgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219.375" y="-382.3943661971831"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ol5-lc-muV">
             <objects>
@@ -143,6 +183,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="aFO-KZ-GwZ" kind="relationship" relationship="viewControllers" id="1VM-S3-X5z"/>
                         <segue destination="fbX-SK-xrq" kind="relationship" relationship="viewControllers" id="84h-xx-Lci"/>
                         <segue destination="hl7-A5-kHG" kind="relationship" relationship="viewControllers" id="k7a-Xt-UvW"/>
                         <segue destination="csL-L1-gYV" kind="relationship" relationship="viewControllers" id="ASz-Jh-VFc"/>
@@ -150,7 +191,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W62-Bw-oGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166" y="-408"/>
+            <point key="canvasLocation" x="1166" y="-382"/>
         </scene>
         <!--Частые штрафы-->
         <scene sceneID="4eS-sI-6HK">
@@ -213,6 +254,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3b-gq-CTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-793" y="433"/>
+        </scene>
+        <!--Заправки-->
+        <scene sceneID="8eP-8a-sHl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aFO-KZ-GwZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Заправки" id="fCT-pz-5VS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XOS-qh-Wy6">
+                        <rect key="frame" x="0.0" y="20" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lP1-Hl-Rcx" kind="relationship" relationship="rootViewController" id="lt8-jZ-oEi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mW-Ze-jhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="-382"/>
         </scene>
     </scenes>
 </document>
